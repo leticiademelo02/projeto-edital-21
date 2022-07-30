@@ -1,11 +1,11 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import DashboardLayout from "../layouts/DashboardLayout/DashboardLayout.vue";
+import DashboardLayout from "./layouts/DashboardLayout/DashboardLayout.vue";
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/dashboard",
+    path: "/",
     component: DashboardLayout,
     children: [
       {
