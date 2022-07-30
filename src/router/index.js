@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import DashboardLayout from "./layouts/DashboardLayout/DashboardLayout.vue";
+import DashboardLayout from "../layouts/DashboardLayout/DashboardLayout.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -9,10 +9,9 @@ const routes = [
     component: DashboardLayout,
     children: [
       {
-        path: "/home",
+        path: "/",
         name: "home",
-        component: () =>
-          import(/* webpackChunkName: "home" */ "../views/HomeView.vue"),
+        component: () => import("@/views/HomeView.vue"),
         meta: {
           title: "HomeView",
         },
@@ -20,8 +19,7 @@ const routes = [
       {
         path: "/about",
         name: "about",
-        component: () =>
-          import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+        component: () => import("@/views/AboutView.vue"),
         meta: {
           title: "About",
         },
