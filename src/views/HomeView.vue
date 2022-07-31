@@ -9,7 +9,7 @@
     <ButtonFill
       class="align-self-baseline"
       @click="$router.push({ name: 'about' })"
-      >teste</ButtonFill
+      >ola</ButtonFill
     >
   </div>
 </template>

@@ -1,10 +1,16 @@
 @import "bootstrap";
 @import "bootstrap-vue";
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;900&display=swap");
-@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import "@/variables.scss";
 
-.btn:focus,
-.btn.focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba($green1, 0.25);
+html,
+body {
+  height: 100%;
+  color: $black;
+}
+
+#app {
+  height: 100%;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  color: $white;
 }
