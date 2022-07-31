@@ -6,18 +6,26 @@
         <td>{{ cursos.parceiros }}</td>
       </tr>
     </table>
-    <b-button>as</b-button>
+    <ButtonFill
+      class="align-self-baseline"
+      @click="$router.push({ name: 'about' })"
+      >teste</ButtonFill
+    >
   </div>
 </template>
 
 <script>
 import Cursos from "@/services/cursos";
+import ButtonFill from "@/components/ButtonFill/ButtonFill.vue";
 
 export default {
   data() {
     return {
       cursos: [],
     };
+  },
+  components: {
+    ButtonFill,
   },
   mounted() {
     Cursos.PageLimit().then((response) => {

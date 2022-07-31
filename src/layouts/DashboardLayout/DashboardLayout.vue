@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue/NavBar.vue";
-import FooterBar from "@/components/FooterBar.vue/FooterBar.vue";
+import NavBar from "@/components/NavBar/NavBar.vue";
+import FooterBar from "@/components/FooterBar/FooterBar.vue";
 
 export default {
   name: "DashboardLayout",
