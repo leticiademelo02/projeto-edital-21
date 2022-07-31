@@ -6,6 +6,7 @@
         <td>{{ cursos.parceiros }}</td>
       </tr>
     </table>
+    <b-button>as</b-button>
   </div>
 </template>
 
