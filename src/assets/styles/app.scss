@@ -1,6 +1,6 @@
 @import "bootstrap";
 @import "bootstrap-vue";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 @import "./variables.scss";
 
 html,
@@ -11,6 +11,32 @@ body {
 
 #app {
   height: 100%;
-  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   color: $black;
+}
+
+.bg-green {
+  background-color: $green;
+}
+
+.bg-gray {
+  background-color: $gray;
+}
+.text-white {
+  color: $white;
+}
+
+.fw-lightbold {
+  font-weight: 300;
+}
+
+.fw-semibold {
+  font-weight: 400;
+}
+
+.fw-bold {
+  font-weight: 500;
+}
+.fw-extrabold {
+  font-weight: 600;
 }

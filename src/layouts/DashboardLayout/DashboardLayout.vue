@@ -1,9 +1,13 @@
 <template>
   <div>
-    <NavBar />
-    <FooterBar />
-    <BottomBar />
-    <router-view />
+    <div>
+      <div><NavBar /></div>
+      <div>
+        <BottomBar />
+        <FooterBar />
+      </div>
+      <router-view />
+    </div>
   </div>
 </template>
 
