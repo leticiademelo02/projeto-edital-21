@@ -5,53 +5,85 @@
       <router-link to="/about">About</router-link>
     </nav>
   </div> -->
+  <div>
+    <b-navbar
+      class="shadow-sm p-3 mb-5 bg-white"
+      toggleable="lg"
+      type="dark"
+      variant="info"
+    >
+      <b-navbar-brand href="#">
+        <div class="d-flex justify-content-center">
+          <img
+            src="@/assets/images/icons/icon-elderbook.png"
+            alt=""
+            class="img-fluid"
+            width="30"
+            height="24"
+          />
+        </div>
+      </b-navbar-brand>
 
-  <b-navbar
-    class="shadow-sm p-3 mb-5"
-    toggleable="lg"
-    type="dark"
-    variant="info"
-  >
-    <b-navbar-brand href="#"
-      ><img
-        src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
-        alt="Teste"
-        class="img-fluid"
-        width="30"
-        height="24"
-    /></b-navbar-brand>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-    <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav>
-        <b-nav-item
-          ><router-link to="/" class="nav-link active" aria-current="page"
-            >Inicio</router-link
-          ></b-nav-item
-        >
-        <b-nav-item
-          ><router-link to="/about" class="nav-link"
-            >About</router-link
-          ></b-nav-item
-        >
-      </b-navbar-nav>
-
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-        <b-nav-form>
-          <b-form-input
-            size="sm"
-            class="mr-sm-2"
-            placeholder="Search"
-          ></b-form-input>
-          <b-button size="sm" class="my-2 my-sm-0" type="submit"
-            >Search</b-button
+      <b-collapse class="d-flex justify-content-end" id="nav-collapse" is-nav>
+        <b-navbar-nav class="font-size-20 fw-extrabold">
+          <b-nav-item
+            ><router-link to="/" class="nav-link" aria-current="page"
+              >Inicio</router-link
+            ></b-nav-item
           >
-        </b-nav-form>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+          <b-nav-item
+            ><router-link to="/sobrenos" class="nav-link"
+              >Sobre Nós</router-link
+            ></b-nav-item
+          >
+          <b-nav-item
+            ><router-link to="/cursos" class="nav-link"
+              >Cursos</router-link
+            ></b-nav-item
+          >
+          <b-nav-item
+            ><router-link to="/parceiros" class="nav-link"
+              >Parceiros</router-link
+            ></b-nav-item
+          >
+          <b-nav-item
+            ><router-link to="/transparencia" class="nav-link"
+              >Transparência</router-link
+            ></b-nav-item
+          >
+          <b-nav-item
+            ><router-link to="/contato" class="nav-link"
+              >Contato</router-link
+            ></b-nav-item
+          >
+        </b-navbar-nav>
+
+        <!-- Right aligned nav items -->
+
+        <div class="card d-flex justify-content-center">
+          <div class="card-body d-flex align-items-center ml-1">
+            <img
+              src="@/assets/images/icons/icon-search.png"
+              class="img-fluid"
+              alt=""
+            />
+
+            <div class="col-12">
+              <b-input-group size="sm" class="ml-3">
+                <b-form-input type="search"></b-form-input>
+              </b-input-group>
+            </div>
+          </div>
+        </div>
+        <b-button class="btn btn-outline-green1 mr-2 mb-2 mb-md-0" size="sm">
+          Entrar
+        </b-button>
+        <b-button class="btn btn-purple" size="sm"> Cadastrar </b-button>
+      </b-collapse>
+    </b-navbar>
+  </div>
 
   <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">

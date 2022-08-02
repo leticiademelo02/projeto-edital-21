@@ -7,21 +7,16 @@
             <div class="d-flex align-items-center flex-column">
               <div class="d-flex justify-content-center">
                 <img
-                  src="@/assets/images/logos/logo-lais.png"
+                  src="@/assets/images/logos/logo-lais-small.png"
                   class="mr-2"
                   alt=""
                 />
-                <div class="d-flex align-items-center">
-                  <img
-                    src="@/assets/images/logos/logo-lais.png"
-                    class=""
-                    alt=""
-                  />
-                </div>
               </div>
-              <div class="container text-start mt-2 oi">
-                Laboratório de Inovação Tecnológica em Saúde.
-              </div>
+              <row>
+                <p class="fw-semibold">
+                  Laboratório de Inovação Tecnológica em Saúde.
+                </p></row
+              >
             </div>
           </section>
 
