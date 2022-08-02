@@ -26,10 +26,17 @@ body {
   color: $white;
 }
 
+.text-purple {
+  color: $purple;
+}
+
 .text-gray {
   color: $gray;
 }
 
+.text-purple {
+  color: $purple;
+}
 .fw-lightbold {
   font-weight: 300;
 }
@@ -43,4 +50,46 @@ body {
 }
 .fw-extrabold {
   font-weight: 600;
+}
+
+.font-size-20 {
+  font-size: 1.25rem;
+}
+
+.font-size-30 {
+  font-size: 1.875rem;
+}
+
+.border-right-0 {
+  border-right: 0;
+}
+
+.btn-outline-purple {
+  background-color: transparent;
+  border: 1px solid $purple;
+  color: $purple;
+  font-weight: 600;
+}
+.btn-outline-green1 {
+  border-color: $purple;
+  color: $purple;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.btn-outline-main-secondary {
+  background-color: transparent;
+  border: 1px solid $purple;
+  color: $purple;
+  font-weight: 600;
+}
+
+.btn-purple {
+  background-color: $purple;
+  border-color: $purple;
+  color: $white;
+}
+
+.border-purple {
+  border-color: $purple !important;
 }
