@@ -7,10 +7,11 @@
   </div> -->
   <div>
     <b-navbar
-      class="shadow-sm p-3 mb-5 bg-white"
+      class="shadow-sm p-3 mb-0 bg-white"
       toggleable="lg"
       type="dark"
       variant="info"
+      fixed-top
     >
       <b-navbar-brand href="#">
         <div class="d-flex justify-content-center">
@@ -77,10 +78,11 @@
             </div>
           </div>
         </div>
-        <b-button class="btn btn-outline-green1 mr-2 mb-2 mb-md-0" size="sm">
-          Entrar
-        </b-button>
-        <b-button class="btn btn-purple" size="sm"> Cadastrar </b-button>
+
+        <b-button class="ml-3 mr-2 btn-outline-purple" size="sm"
+          >Entrar</b-button
+        >
+        <b-button class="btn-purple" size="sm">Cadastrar</b-button>
       </b-collapse>
     </b-navbar>
   </div>
@@ -142,5 +144,4 @@ export default {
   name: "NavBar",
 };
 </script>
-
 <style lang="scss" scoped src="./styles.scss" />
