@@ -5,7 +5,6 @@
         <div class="col-12">
           <ul class="logos-flex-container">
             <li class="logos-flex-item">oi</li>
-            <li class="logos-flex-item">oi</li>
           </ul>
         </div>
       </div>
