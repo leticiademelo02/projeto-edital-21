@@ -1,13 +1,11 @@
 <template>
-  <div>
-    <div>
+  <div id="app">
+    <div class="d-flex justify-content-between flex-column">
       <div><NavBar /></div>
-      <div>
-        <BottomBar />
-        <FooterBar />
-      </div>
-      <router-view />
+      <div><BottomBar /> <FooterBar /></div>
     </div>
+
+    <router-view />
   </div>
 </template>
 
