@@ -11,17 +11,43 @@ const routes = [
       {
         path: "/",
         name: "home",
-        component: () => import("@/views/HomeView.vue"),
+        component: () => import("@/views/HomeView/HomeView.vue"),
         meta: {
           title: "HomeView",
         },
       },
       {
-        path: "/about",
-        name: "about",
-        component: () => import("@/views/AboutView.vue"),
+        path: "/cursos",
+        name: "cursos",
+        component: () => import("@/views/CursoView/CursoView.vue"),
         meta: {
-          title: "About",
+          title: "Cursos",
+        },
+      },
+
+      {
+        path: "/modulos/:id",
+        name: "modulos",
+        component: () => import("@/views/ModuloView/ModuloView.vue"),
+        meta: {
+          title: "modulos",
+        },
+      },
+      {
+        path: "/parceiros",
+        name: "parceiros",
+        component: () => import("@/views/ParceirosView/ParceirosView.vue"),
+        meta: {
+          title: "Parceiros",
+        },
+      },
+      {
+        path: "/transparencia",
+        name: "transparencia",
+        component: () =>
+          import("@/views/TransparenciaView/TransparenciaView.vue"),
+        meta: {
+          title: "Transparencia",
         },
       },
     ],

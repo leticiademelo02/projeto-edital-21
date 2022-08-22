@@ -1,0 +1,78 @@
+.breadcrumb {
+  background-color: transparent !important;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.breadcrumb .breadcrumb-item a {
+  color: #808080;
+}
+
+.breadcrumb > .active {
+  color: black;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  padding-right: 0.5rem;
+  color: #e0e0e0;
+  content: "/";
+}
+
+.card {
+  border-radius: 20px;
+  background: #f5f5f7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border: 0;
+}
+
+p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  padding: 0;
+  margin: 0;
+  color: #2f2e41;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #7dc143;
+  margin-bottom: 0px;
+}
+
+// .test {
+//   width: 20px;
+//   height: 20px;
+//   color: #7dc143;
+//
+// }
+
+.test {
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+}
+
+@import "@/assets/styles/variables.scss";
+
+.circle-white {
+  width: 20px;
+  height: 20px;
+  background-color: $white;
+}
+.circle-green {
+  width: 20px;
+  height: 20px;
+  background-color: $green;
+}
+.circle-purple {
+  width: 20px;
+  height: 20px;
+  background-color: $purple1;
+}
+.circle-gray {
+  width: 20px;
+  height: 20px;
+  background-color: $gray;
+}

@@ -1,41 +1,25 @@
 <template>
-  <!-- <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-  </div> -->
   <div>
     <b-navbar
-      class="shadow-sm p-3 mb-0 bg-white"
       toggleable="lg"
-      type="dark"
+      type="light"
       variant="info"
-      fixed-top
+      class="py-3 bg-white w-100 pl-lg-0"
     >
-      <b-navbar-brand href="#">
-        <div class="d-flex justify-content-center">
-          <img
-            src="@/assets/images/icons/icon-elderbook.png"
-            alt=""
-            class="img-fluid"
-            width="30"
-            height="24"
-          />
-        </div>
-      </b-navbar-brand>
-
+      <b-navbar-brand href="#"
+        ><img src="@/assets/images/logos/icon-header.svg" alt=""
+      /></b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-      <b-collapse class="d-flex justify-content-end" id="nav-collapse" is-nav>
-        <b-navbar-nav class="font-size-20 fw-extrabold">
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav class="mr-auto ml-auto">
           <b-nav-item
             ><router-link to="/" class="nav-link" aria-current="page"
-              >Inicio</router-link
+              >Início</router-link
             ></b-nav-item
           >
           <b-nav-item
-            ><router-link to="/sobrenos" class="nav-link"
+            ><router-link to="#" class="nav-link"
               >Sobre Nós</router-link
             ></b-nav-item
           >
@@ -55,93 +39,80 @@
             ></b-nav-item
           >
           <b-nav-item
-            ><router-link to="/contato" class="nav-link"
+            ><router-link to="#" class="nav-link pr-0"
               >Contato</router-link
             ></b-nav-item
           >
-        </b-navbar-nav>
-
-        <!-- Right aligned nav items -->
-
-        <div class="card d-flex justify-content-center">
-          <div class="card-body d-flex align-items-center ml-1">
-            <img
-              src="@/assets/images/icons/icon-search.png"
-              class="img-fluid"
-              alt=""
-            />
-
-            <div class="col-12">
-              <b-input-group size="sm" class="ml-3">
-                <b-form-input type="search"></b-form-input>
-              </b-input-group>
+          <b-nav-form>
+            <div class="input-group ml-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text bg-transparent border-right-0">
+                  <img
+                    src="@/assets/images/icons/icon-search.svg"
+                    class="img-fluid"
+                  />
+                </div>
+                <input
+                  class="py-2 border-left-0 form-control"
+                  type="text"
+                  v-model="search"
+                  @click="filteredCursos"
+                />
+              </div>
             </div>
-          </div>
-        </div>
+          </b-nav-form>
+        </b-navbar-nav>
+        <b-nav-form>
+          <button class="btn btn-outline-purple1 mt-md-3 mt-lg-0 mt-3">
+            Entrar
+          </button>
 
-        <b-button class="ml-3 mr-2 btn-outline-purple" size="sm"
-          >Entrar</b-button
-        >
-        <b-button class="btn-purple" size="sm">Cadastrar</b-button>
+          <button
+            class="btn btn-purple1 ml-4 ml-lg-2 ml-md-2 mt-md-3 mt-lg-0 mt-3"
+          >
+            Cadastrar
+          </button>
+        </b-nav-form>
       </b-collapse>
     </b-navbar>
   </div>
-
-  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <nav class="navbar-header mr-0">
-          <a class="navbar-brand" href="#">
-            <img
-              src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
-              alt="Teste"
-              class="img-fluid"
-              width="30"
-              height="24"
-            />
-          </a>
-        </nav>
-        <b-button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </b-button>
-        <div
-          class="collapse-show navbar-collapse justify-content-end"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <router-link to="/" class="nav-link active" aria-current="page"
-                >Inicio</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <router-link to="/about" class="nav-link">About</router-link>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-light" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav> -->
 </template>
 
 <script>
 export default {
   name: "NavBar",
+  data() {
+    return {
+      search: "",
+      cursos: [],
+    };
+  },
+  // computed: {
+  //   filteredCursos() {
+  //     return this.cursos.filter((cursos) => {
+  //       return (
+  //         cursos.title.toLowerCase().includes(this.search.toLowerCase()) ||
+  //         cursos.cateroria.toLowerCase().includes(this.search.toLowerCase())
+  //       );
+  //     });
+  //   },
+  // },
+  methods: {
+    filteredCursos() {
+      fetch(`http://localhost:3004/cursos?`)
+        .then((response) => response.json())
+        .then((res) => {
+          if (this.search) {
+            this.cursos = res.cursos.filter((cursos) =>
+              cursos.titulo.toLowerCase().includes(this.search.toLowerCase())
+            );
+            console.log(this.search);
+          } else {
+            this.cursos = res.cursos;
+          }
+        });
+    },
+  },
 };
 </script>
 <style lang="scss" scoped src="./styles.scss" />

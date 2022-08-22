@@ -1,0 +1,110 @@
+@import "@/assets/styles/variables.scss";
+
+.parceiros-text {
+  font-size: 13px;
+  color: $green;
+}
+
+.img-custom {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card-body {
+  border-radius: 20px;
+}
+
+.card {
+  border: 0;
+}
+
+p {
+  font-size: 17px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  color: transparent;
+}
+
+.form-control {
+  background-color: transparent;
+}
+
+.btn-purple1 {
+  background-color: $purple1;
+  border: 1px solid $purple1;
+  border-color: $purple1;
+  color: $white;
+  font-weight: 600;
+  border-radius: 20px;
+  font-size: 20px;
+  min-width: 178px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+}
+
+// h2 {
+//   font-size: 13px;
+//   text-overflow: ellipsis; /* will make [...] at the end */
+//   width: 274px; /* change to your preferences */
+//   white-space: nowrap; /* paragraph to one line */
+//   overflow: hidden; /* older browsers */
+// }
+
+.custom-div {
+  max-width: 65.88px !important;
+}
+
+.custom-div2 {
+  max-width: 11.07px !important;
+}
+
+#div3 {
+  white-space: nowrap;
+  width: 28px;
+  overflow: hidden;
+}
+
+// #div1 {
+//   white-space: nowrap;
+//   width: 274px;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   border: 1px solid #000000;
+// }
+
+@media screen and (min-width: 992px) {
+  #div-h1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  #div-h2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  #div-p {
+    width: 53px;
+  }
+
+  .img-custom {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .custom-col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -1,12 +1,11 @@
 @import "bootstrap";
 @import "bootstrap-vue";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 @import "./variables.scss";
 
 html,
 body {
   height: 100%;
-  color: $blue;
 }
 
 #app {
@@ -22,12 +21,16 @@ body {
 .bg-gray {
   background-color: $gray;
 }
+.bg-gray2 {
+  background-color: $gray2;
+}
+
 .text-white {
   color: $white;
 }
 
 .text-purple {
-  color: $purple;
+  color: $purple1;
 }
 
 .text-gray {
@@ -35,8 +38,13 @@ body {
 }
 
 .text-purple {
-  color: $purple;
+  color: $purple1;
 }
+
+.text-green {
+  color: $green;
+}
+
 .fw-lightbold {
   font-weight: 300;
 }
@@ -52,32 +60,30 @@ body {
   font-weight: 600;
 }
 
+.fw-700 {
+  font-weight: 700;
+}
+
+.font-size-16 {
+  font-size: 1rem;
+}
+
 .font-size-20 {
   font-size: 1.25rem;
+}
+
+.font-size-25 {
+  font-size: 1.5625rem;
 }
 
 .font-size-30 {
   font-size: 1.875rem;
 }
 
-.border-right-0 {
-  border-right: 0;
+.font-size-40 {
+  font-size: 2.5rem;
 }
 
-.btn-outline-purple {
-  background-color: transparent;
-  border: 1px solid $purple;
-  color: $purple;
-  font-weight: 600;
-}
-
-.btn-purple {
-  background-color: $purple;
-  border-color: $purple;
-  color: $white;
-  font-weight: 600;
-}
-
-.border-purple {
-  border-color: $purple;
+.font-size-60 {
+  font-size: 3.75rem;
 }

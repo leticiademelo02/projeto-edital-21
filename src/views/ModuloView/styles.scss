@@ -1,0 +1,104 @@
+.breadcrumb {
+  background-color: transparent !important;
+  font-weight: 600;
+  font-size: 16px;
+}
+.breadcrumb .breadcrumb-item a {
+  color: #e0e0e0;
+}
+
+.header-pages {
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.breadcrumb > .active {
+  color: #ffffff;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: 0.5rem;
+  color: #e0e0e0;
+  content: "/";
+}
+
+.header-pages h1 {
+  font-weight: 600;
+  font-size: 40px;
+  margin-top: 1.875rem;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.header-pages-title h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 3.75;
+  margin-bottom: 1.875;
+  color: #ffffff;
+}
+
+.header-pages-subtitle h1 {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 51px;
+  color: #ffffff;
+}
+
+.header-pages {
+  background-color: #7dc143;
+}
+
+#div3 {
+  white-space: nowrap;
+  width: 28px;
+  overflow: hidden;
+}
+
+#star {
+  width: 136.92px;
+  height: 18.68px;
+  padding-right: 9.78px;
+}
+
+.text-modulo {
+  font-weight: 700;
+  font-size: 19.5607px;
+  color: #2f2e41;
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+  color: #000000;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 25px;
+  color: #7dc143;
+}
+h4 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #2f2e41;
+}
+
+li::marker {
+  font-size: 0.7rem;
+  font-weight: bolder;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  color: transparent;
+  padding-right: 0;
+}
+.custom-card {
+  border: 1px solid greenyellow;
+}
+
+.form-control {
+  background-color: transparent;
+}
