@@ -6,6 +6,7 @@
 html,
 body {
   height: 100%;
+  color: $blue;
 }
 
 #app {
@@ -23,6 +24,9 @@ body {
 }
 .bg-gray2 {
   background-color: $gray2;
+}
+.bg-gray3 {
+  background-color: $gray3;
 }
 
 .text-white {
@@ -86,4 +90,8 @@ body {
 
 .font-size-60 {
   font-size: 3.75rem;
+}
+
+.border-right-0 {
+  border-right: 0;
 }
