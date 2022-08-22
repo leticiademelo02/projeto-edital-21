@@ -70,14 +70,23 @@
           />
         </div>
       </div>
+
       <div class="row">
-        <div class="col d-flex justify-content-center">
+        <!-- <div class="col d-flex justify-content-center">
           <b-pagination
             size="md"
             :total-rows="totalItems"
             v-model="currentPage"
             :per-page="perPage"
           ></b-pagination>
+        </div> -->
+      </div>
+      <div class="row mb-5 pb-5">
+        <div class="col d-flex justify-content-center">
+          <h5 class="text-pagination">
+            página {{ `${currentPage}` }} de
+            {{ parseInt(`${this.totalItems / this.perPage + 1}`) }}
+          </h5>
         </div>
       </div>
     </div>

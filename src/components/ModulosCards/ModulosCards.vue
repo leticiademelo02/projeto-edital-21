@@ -52,7 +52,8 @@
                       <img
                         src="@/assets/images/icons/icon-clock.svg"
                         class="mr-2"
-                        alt=""
+                        width="23.19px"
+                        height="23.19px"
                       />
                     </div>
                     <div class="col px-0">

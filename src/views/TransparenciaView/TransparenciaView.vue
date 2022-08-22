@@ -282,7 +282,6 @@
 <script>
 import BottomBar from "@/components/BottomBar/BottomBar.vue";
 import Transparencia from "@/services/transparencia";
-// import Cursos from "@/services/cursos";
 
 export default {
   name: "TransparenciaView",
@@ -296,10 +295,6 @@ export default {
   },
 
   mounted() {
-    // Cursos.TodosCursos().then((response) => {
-    //   console.log(response.data);
-    //   this.cursos = response.data;
-    // });
     Transparencia.DadosGerais().then((response) => {
       console.log(response.data);
       this.transparecia = response.data;

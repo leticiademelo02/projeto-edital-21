@@ -47,10 +47,10 @@
       </div>
       <div class="row mb-5 pb-5">
         <div class="col d-flex justify-content-center">
-          <p class="text-pagination">
+          <h5 class="text-pagination">
             página {{ `${currentPage}` }} de
             {{ `${this.totalItems / this.perPage}` }}
-          </p>
+          </h5>
         </div>
       </div>
     </div>

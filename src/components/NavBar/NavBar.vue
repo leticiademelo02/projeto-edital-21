@@ -87,16 +87,7 @@ export default {
       cursos: [],
     };
   },
-  // computed: {
-  //   filteredCursos() {
-  //     return this.cursos.filter((cursos) => {
-  //       return (
-  //         cursos.title.toLowerCase().includes(this.search.toLowerCase()) ||
-  //         cursos.cateroria.toLowerCase().includes(this.search.toLowerCase())
-  //       );
-  //     });
-  //   },
-  // },
+
   methods: {
     filteredCursos() {
       fetch(`http://localhost:3004/cursos?`)

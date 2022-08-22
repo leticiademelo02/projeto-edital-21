@@ -84,3 +84,23 @@
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
+
+h5 {
+  font-weight: 400px;
+  font-size: 16px;
+
+  color: #2f2e41;
+}
+
+p {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #2f2e41;
+}
